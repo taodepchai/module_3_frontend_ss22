@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = +prompt("nhap a");
+      let b = +prompt("nhap b");
+      let c = +prompt("nhap c");
+      switch (a) {
+        case 0:
+          if (b === 0) {
+            document.write("pt vo nghiem");
+          } else document.write("phuong trinh co nghiem x=", -c / b);
+          break;
+        default:
+          let delta = b * b - 4 * a * c;
+          if (delta < 0) {
+            document.write("pt vo nghiem");
+          } else if (delta === 0) {
+            document.write("pt co nghiem kep x=", -b / (2 * a));
+          } else
+            document.write(
+              "pt co 2 nghiem x1=",
+              (-b - Math.sqrt(delta)) / (2 * a)
+            );
+          document.write(",x2=", (-b + Math.sqrt(delta)) / (2 * a));
+      }
+    </script>
+  </body>
+</html>

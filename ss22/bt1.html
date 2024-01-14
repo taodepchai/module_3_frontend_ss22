@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function check(a, b) {
+        if (a % b === 0 || b % a === 0) {
+          return true;
+        } else return false;
+      }
+
+      let a = +prompt("nhap a");
+      let b = +prompt("nhap b");
+      if (check(a, b) === true) {
+        document.write("chia het");
+      } else document.write("khong chia het");
+    </script>
+  </body>
+</html>

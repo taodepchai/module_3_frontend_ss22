@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = +prompt("nhap a");
+      let b = +prompt("nhap b");
+      let operator = prompt("nhap dau phep tinh");
+      let result = +prompt("nhap ket qua");
+      switch (operator) {
+        case "+":
+          if (a + b === result) {
+            document.write("hop le");
+          } else document.write("khong hop le");
+          break;
+        case "-":
+          if (a - b === result) {
+            document.write("hop le");
+          } else document.write("khong hop le");
+          break;
+        case "*":
+          if (a * b === result) {
+            document.write("hop le");
+          } else document.write("khong hop le");
+          break;
+        case "/":
+          if (a / b === result) {
+            document.write("hop le");
+          } else document.write("khong hop le");
+          break;
+        default:
+            document.write("khong hop le");
+            break;
+      }
+    </script>
+  </body>
+</html>

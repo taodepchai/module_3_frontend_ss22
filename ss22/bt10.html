@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Trong JavaScript, một giá trị “truthy” là một giá trị được coi
+      // là đúng khi gặp trong một ngữ cảnh Boolean. Tất cả các giá trị
+      // đều là “truthy” trừ khi chúng được định nghĩa là “falsy”
+      let str = "Hello";
+      if (str) {
+        console.log("Chuỗi là truthy");
+      }
+      let undefinedValue;
+      if (!undefinedValue) {
+        console.log("Giá trị undefined là falsy");
+      }
+    </script>
+  </body>
+</html>
